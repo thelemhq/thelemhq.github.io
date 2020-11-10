@@ -1,14 +1,16 @@
 body {
-    font-family: sans-serif;
+    font-family: monospace;
     text-align: center;
     margin: 0;
 }
 
 h1 {
+    font-family: sans-serif;
     font-size: 72px;
 }
 
 h2 {
+    font-family: sans-serif;
     font-size: 24px;
 }
 
