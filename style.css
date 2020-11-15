@@ -9,6 +9,10 @@ input {
 appearance: none;
 }
 
+input[type="text"] {
+font-family: monospace;
+}
+
 button {
 -webkit-appearance: none;
 -moz-appearance: none;
