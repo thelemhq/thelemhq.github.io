@@ -3,20 +3,28 @@ font-family: monospace;
 margin: 0;
 }
 
-input {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-}
-
 input[type="email"] {
 font-family: monospace;
 }
 
+input[type="submit"] {
+text-align: center;
+background-color: #000000;
+color: #FFFFFF;
+border: none;
+padding: 16px 32px;
+font-weight: bold;
+border-radius: 32px;
+}
+
 button {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+text-align: center;
+background-color: #000000;
+color: #FFFFFF;
+border: none;
+padding: 16px 32px;
+font-weight: bold;
+border-radius: 32px;
 }
 
 h1 {
