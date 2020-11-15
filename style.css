@@ -1,5 +1,5 @@
 html {
-font-family: sans-serif;
+font-family: monospace;
 margin: 0;
 }
 
@@ -9,7 +9,7 @@ input {
 appearance: none;
 }
 
-input[type="text"] {
+input[type="email"] {
 font-family: monospace;
 }
 
@@ -20,10 +20,12 @@ appearance: none;
 }
 
 h1 {
+font-family: sans-serif;
 font-size: 72px;
 }
 
 h2 {
+font-family: sans-serif;
 font-size: 24px;
 }
 
