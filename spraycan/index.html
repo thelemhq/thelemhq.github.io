@@ -3,6 +3,23 @@
 <head>
 <link rel="stylesheet" href="/style.css" />
 <title>thelemhq.com</title>
+<style>
+.slider 
+{
+width: 600px;
+height: 450px;
+display: flex;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+}
+.slide 
+{
+width: 600px;
+scroll-snap-align: start;
+}
+</style>
 </head>
 <center>
 <body>
@@ -35,9 +52,12 @@ PRESS
 <br>
 <br>
 <div id="maincontent">
-<img src="artsniperpreview.jpg" width=50%;>
-<br>
-<br>
+<div class="slider">
+<div class="slide" id="slide-1"><img src="spraycanpreview1.jpg" width=600px></div>
+<div class="slide" id="slide-2"><img src="spraycanpreview2.jpg" width=600px></div>
+<div class="slide" id="slide-3"><img src="spraycanpreview3.jpg" width=600px;></div>
+<div class="slide" id="slide-3"><img src="spraycanpreview4.jpg" width=600px;></div>
+</div>
 <figure>
 <img src="spraycan1.jpg" width=50%;>
 <figcaption>
