@@ -9,12 +9,24 @@
 position: relative;
 width:800px;
 height:500px;
+left:-200px;
+-moz-transition:0.3s left;
+-webkit-transition:0.3s left;
+transition:0.3s left;
 }
 #flipbook div
 {
 -webkit-background-size: cover;
 background-size: cover;
 background-position: center center;
+}
+#flipbook.centerStart
+{
+left:0px;
+}
+#flipbook.centerEnd
+{
+left:200px;
 }
 </style>
 </head>
@@ -87,7 +99,32 @@ PRESS
 <div class="soft"></div>
 </div>
 <script type="text/javascript">
-$("#flipbook").turn();
+$(function(){
+var mag = $('#flipbook');
+mag.turn();
+mag.bind('turned', function(e, page, pageObj) {
+if(page != 1 && page !=32 && $(this).data('done')){
+mag.addClass('centerStart').removeClass('centerEnd');
+}
+else if (page == 32 && $(this).data('done')){
+mag.addClass('centerEnd').removeClass('centerStart');
+}
+else {
+mag.removeClass('centerStart centerEnd');
+}
+});
+setTimeout(function(){
+mag.fadeTo(500,1);
+},1000);
+$(window).bind('keydown', function(e){
+if (e.keyCode == 37){
+mag.turn('previous');
+}
+else if (e.keyCode==39){
+mag.turn('next');
+}
+});
+});
 </script>
 <p>$75</p>
 </div>
