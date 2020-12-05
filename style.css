@@ -1,6 +1,6 @@
 html 
 {
-font-family: sans-serif;
+font-family: monospace;
 margin: 0;
 }
 
@@ -35,11 +35,13 @@ cursor:pointer;
 
 h1 
 {
+font-family: sans-serif;
 font-size: 72px;
 }
 
 h2 
 {
+font-family: sans-serif;
 font-size: 28px;
 }
 
